@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Конвертер валют онлайн</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-left">bank</span>
+        <span class="brand-badge">a</span>
+      </div>
+      <nav class="top-nav">
+        <a>БАНК</a>
+        <a>БИЗНЕС</a>
+        <a>ИНВЕСТИЦИИ</a>
+        <a>СТРАХОВАНИЕ</a>
+        <a>МОБАЙЛ</a>
+        <a>ПУТЕШЕСТВИЯ</a>
+        <a>РАЗВЛЕЧЕНИЯ</a>
+      </nav>
+      <div class="login-btn">ВОЙТИ</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Конвертер валют онлайн</h1>
+
+    <section class="converter">
+      <div class="col">
+        <div class="label">У меня есть</div>
+        <div class="tabs" data-side="left">
+          <button class="tab active" data-currency="RUB">RUB</button>
+          <button class="tab" data-currency="USD">USD</button>
+          <button class="tab" data-currency="EUR">EUR</button>
+          <button class="tab" data-currency="GBP">GBP</button>
+        </div>
+
+        <div class="card">
+          <input id="leftInput" class="big-input" inputmode="decimal" value="5000" />
+          <div class="small-rate" id="leftRate">—</div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="label">Хочу приобрести</div>
+        <div class="tabs" data-side="right">
+          <button class="tab" data-currency="RUB">RUB</button>
+          <button class="tab active" data-currency="USD">USD</button>
+          <button class="tab" data-currency="EUR">EUR</button>
+          <button class="tab" data-currency="GBP">GBP</button>
+        </div>
+
+        <div class="card">
+          <input id="rightInput" class="big-input" inputmode="decimal" />
+          <div class="small-rate" id="rightRate">—</div>
+        </div>
+      </div>
+    </section>
+
+    <p class="error" id="error"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
