@@ -1,4 +1,4 @@
-const API_KEY = "a9fd904c139fa65241968fd7247e64cd";
+const API_KEY = "0526f75efcdfd3a40b5442d32424082b";
 
 const leftInput  = document.getElementById("leftInput");
 const rightInput = document.getElementById("rightInput");
